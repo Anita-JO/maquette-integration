@@ -1,9 +1,11 @@
 /**less variables**/
 html,body {
   height:100%;
+  width:100%;
 }
 
 body {
+  overflow : hidden;  
   padding: 0;
   margin: 0;
   background-image: url("decoupes/img/background.jpg");
@@ -12,11 +14,22 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  background-attachment:fixed;
+  background-size: cover;  
 }
-.container > img{
-    margin: 2% 40%;
-  }
-.header .container {
+.container {
+  
+  position : relative;
+  background-position: center 70px;
+}
+.container--centerImage {
+  position:relative;
+  width :50%;
+  margin :15px auto;
+  padding:4%;
+  left   :20%;
+  background-position: center 70px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
 }
