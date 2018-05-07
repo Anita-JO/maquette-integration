@@ -1,0 +1,67 @@
+/**less variables**/
+/**less variables**/
+body {
+  background: url("decoupes/img/background.jpg") no-repeat;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.container-middle {
+  display: block;
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  margin: -14px 0 0 250px;
+  color: #000000;
+  background: url("decoupes/img/background-wrapper.jpg") no-repeat;
+}
+.container-middle ul,
+.container-middle ul.SMIcons {
+  display: flex;
+  list-style-type: none;
+}
+.container-middle ul .firstBlock > img,
+.container-middle ul.SMIcons .firstBlock > img,
+.container-middle ul .secondBlock > img,
+.container-middle ul.SMIcons .secondBlock > img,
+.container-middle ul .thirdBlock > img,
+.container-middle ul.SMIcons .thirdBlock > img {
+  display: inline-block;
+}
+.container-middle ul .secondBlock > img,
+.container-middle ul.SMIcons .secondBlock > img {
+  padding: 15px;
+  height: 135px;
+  width: 1;
+}
+.container-middle p.firstText,
+.container-middle .secondText {
+  margin: 10px 156px 10px 220px;
+  text-transform: uppercase;
+}
+.container-middle img.giftsBlock {
+  margin: 10px 50px 10px 68px;
+  display: block;
+}
+.container-middle button {
+  display: block;
+  position: relative;
+  background-color: #000000;
+  color: #ffffff;
+  margin: 10px 156px 10px 220px;
+  padding: 15px;
+  text-transform: uppercase;
+}
+.container-middle .SMIcons {
+  text-align: center;
+  margin: 0 0 0 120px;
+}
+.container-middle .SMIcons .firstIcon,
+.container-middle .SMIcons .secondIcon,
+.container-middle .SMIcons .thirdIcon,
+.container-middle .SMIcons .fourthIcon {
+  display: inline-block;
+  padding: 5px;
+}
