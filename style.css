@@ -1,4 +1,6 @@
-
+*{
+  box-sizing :border-box;
+}
 html,body {
   height:100%;
   width:100vw;
@@ -16,6 +18,9 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;  
+}
+img{
+  max-width:100%;
 }
 .container {
   display :block;
@@ -52,25 +57,32 @@ body {
   margin-top:4%;
 }
 .textBlock {
-  font: 15px bold Arial;
-  
+    font-size: 10px;
+    font-weight: bold;
+    font-family :"Times New Roman";
 }
-.textBlock p:nth-child(odd){
+.textBlock p:nth-child(1){
     margin:-8% 3% 0 0;
     text-align:center;
+    font-size :13px;
   }
-.textBlock p:nth-child(even){
-  font-size : 11px;
-  font-weight:bold;
+.textBlock p:nth-child(2){
+  
   text-align:center;
   text-transform:uppercase;
 }
-
+.middleBlock {
+  margin-left: 30%;
+}
+.middleBlock p{
+  
+  font-size : 15px;
+  font-weight:bold;
+}
 
 /***Mobile version en RWD***/
 @media screen and (min-width: 350px) and (max-width:768px){
   body {
-    height:100%;
       overflow : hidden;  
       padding: 0;
       margin: 0;
@@ -84,7 +96,6 @@ body {
     }
     .row{
       width :100%;
-      height:100%;
       background-image: url("decoupes/img/background-wrapper.jpg");
     }
     .container--centerImage {
