@@ -93,6 +93,14 @@ img{
 .middleBlock button img {
   padding:0 20px;
 }
+.logoBlock {
+  margin-left:36%;
+  margin-top:0;
+}
+.logoBlock img{
+  height:35px;
+  padding :0 10px 0 10px;
+}
 /***Mobile version en RWD***/
 @media screen and (min-width: 350px) and (max-width:768px){
   body {
@@ -127,5 +135,8 @@ img{
      }
      .middleBlock p {
        margin-right:20%;
+     }
+     .logoBlock img{
+       text-align :center;
      }
 }
