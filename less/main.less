@@ -1,0 +1,163 @@
+/***less variables**/
+@height :auto;
+@row-height:200px;
+@width :100%;
+@body-width:100vw;
+@image-width:35%;
+@textBlock-font: bold 13px "Times New Roman";
+@middleBlock-font :bold 15px "Times New Roman";
+@align :center;
+@black:#000000;
+@white:#ffffff;
+@mobile: ~"only screen and (min-width: 350px) and (max-width: 768px)";
+
+
+*{
+	box-sizing :border-box;
+}
+html,body {
+	height:@width;
+	width:@body-width;
+	position:relative;
+}
+body {
+  overflow : hidden;	
+  padding: 0;
+  margin: 0;
+  background-image: url("decoupes/img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: @align;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+}
+img{
+	max-width:@width;
+}
+.container {
+	display :block;
+	position : relative;
+	background :url("decoupes/img/background-wrapper.jpg");
+	width :70%;
+	height :@height;
+	left   :15%;
+	background-position: @align;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.row {
+	display:block;
+	width:@width;
+	height:@row-height;
+	.container--leftImage,
+	.container--rightImage,
+	.container--centerImage {
+			display :inline-block;
+	}
+		.container--leftImage {
+			width :@image-width;
+			float:left;
+		}
+		.container--rightImage {
+			width:@image-width;
+			float:right;
+		}
+		.container--centerImage {
+			width:30%;
+			margin-top:4%;
+		}
+	}
+	.textBlock {
+		font:@textBlock-font;
+		p {
+			text-align :@align;
+			
+			&:nth-child(1)
+			{
+				margin:-8% 3% 0 0;
+				font-size :13px;
+			}
+			&:nth-child(2)
+			{
+				text-transform:uppercase;
+			}	
+		
+		}
+}
+.middleBlock {
+	margin-left: 30%;
+	p{
+		text-align:@align;
+		font :@middleBlock-font;
+		margin-right:30%;
+	}
+	button {
+		background-color :@black;
+		border-color:@black;
+		color :@white;
+		font-size:16px;
+		margin-right:10%;
+		width: 60%;
+		padding :10px 35px;
+		text-transform :uppercase;
+	img{
+			padding:0 20px;
+		}
+	  }
+}
+.logoBlock {
+	margin :0 0 20% 36%;
+	height :@height;
+	img{
+	height:35px;
+	padding :5px 20px;
+	}
+}
+/***mobile phone media queries**/
+@media @mobile {
+	body {
+		  overflow : hidden;	
+		  padding: 0;
+		  margin: 0;
+		  background-image: url("decoupes/img/background-wrapper.jpg");
+		  background-repeat: no-repeat;
+		  background-position: center;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;  
+		}
+		.container {
+			width:@width;
+			height:@height;
+			left:0;
+		}
+		.textBlock p:nth-child(1){
+			margin:0;
+			text-align:center;
+			font-size :10px;
+		}
+		.row{
+			width :@width;
+			height:@row-height;
+			background-image: url("decoupes/img/background-wrapper.jpg");
+		}
+		.middleBlock {
+			margin: 0 2%;
+		}
+		.middleBlock button {
+			width: @width;
+			padding :10px 15px;
+			font-size :14px;
+		 }
+		 .middleBlock p {
+			 margin:2% 0;
+		 }
+		 .row.logoBlock {
+			 margin:0;
+			 text-align :@align;
+		 }
+}
