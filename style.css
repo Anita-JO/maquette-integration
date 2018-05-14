@@ -11,7 +11,7 @@ body {
   overflow : hidden;  
   padding: 0;
   margin: 0;
-  background-image: url("decoupes/img/background.jpg");
+  background-image: url("../decoupes/img/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -25,7 +25,7 @@ img{
 .container {
   display :block;
   position : relative;
-  background :url("decoupes/img/background-wrapper.jpg");
+  background :url("../decoupes/img/background-wrapper.jpg");
   width :70%;
   height :100%;
   left   :15%;
@@ -107,7 +107,7 @@ img{
       overflow : hidden;  
       padding: 0;
       margin: 0;
-      background-image: url("decoupes/img/background-wrapper.jpg");
+      background-image: url("../decoupes/img/background-wrapper.jpg");
       background-repeat: no-repeat;
       background-position: center;
       -webkit-background-size: cover;
@@ -117,7 +117,7 @@ img{
     }
     .container {
       width:100%;
-      height:auto;
+      height:100%;
       left:0;
     }
     .textBlock p:nth-child(1){
@@ -128,8 +128,17 @@ img{
     .row{
       width :100%;
       height:auto;
-      background-image: url("decoupes/img/background-wrapper.jpg");
+      background-image: url("../decoupes/img/background-wrapper.jpg");
     }
+	.container--leftImage {
+		display :none;
+	}
+	.container--rightImage {
+		display :none;
+	}
+	.container--centerImage {
+			width:100%;
+	}
     .middleBlock {
       margin: 0 2%;
     }
