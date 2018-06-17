@@ -4,5 +4,6 @@ $(document).ready(function(){
 	$('.carousel.carousel-slider').carousel({
 		fullWidth: true
 	});
-	Materialize.toast('Hello World', 3000);
+	$('.collapsible').collapsible();
+	// M.toast('Hello World', 3000);
 });
